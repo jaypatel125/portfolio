@@ -1,13 +1,155 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  /* margin-left: 100;
+  padding: 0; */
+  font-family: 'Poppins', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
 }
+
+.container {
+  max-width: 90%; /* Set max-width to 90% */
+  margin: auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: #000000;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.logo {
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements {
+  
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4AF626;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: #4AF626;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+}
+
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-elements {
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #0100005c;
+    width: 0px;
+    height: calc(100vh - 60px);
+    backdrop-filter: blur(7px);
+    transition: all 0.6s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+    color: #4AF626;
+  }
+
+  .nav-elements.active .li{
+    color: white;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+
+  .nav-elements ul a {
+    color: #ffffff;
+  }  
+}
+
+/* css for home */
+/* Add this CSS to your stylesheet */
+
+.intro-container {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 60px);
+}
+
+.intro, .intro2 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height:90vh;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-y: auto;
+  align-content: center;
+}
+
+.intro {
+  margin-top: 50px;
+   /* Example background color for intro section */
+}
+
+.intro2 {
+  background-color: #a00f0f; /* Example background color for intro2 section */
+  padding-bottom: 20px;
+}
+
