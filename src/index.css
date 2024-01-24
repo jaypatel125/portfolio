@@ -98,6 +98,7 @@ body {
  
   }
 
+
   .nav-elements.active {
     width: 100%;
     color: #4AF626;
@@ -156,12 +157,14 @@ body {
 .page1 {
   margin-top: 50px;
   height:90vh;
+  font-size: larger;
    /* Example background color for intro section */
 }
 
 .page2 {
   padding: auto 30%;
   height:100vh;
+  font-size: larger;
 }
 
 .profileimg{
@@ -181,6 +184,7 @@ body {
 @media (max-width: 600px) {
   .page2 {
     padding: 10%;
+    font-size: unset;
     
   }
   .profileimg{
