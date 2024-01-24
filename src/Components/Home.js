@@ -1,5 +1,4 @@
 // Home.js
-import React, { useState, useEffect } from 'react';
 import profilephoto from '../images/IMG_7423.JPG';
 import { TypeAnimation } from 'react-type-animation';
 
