@@ -38,7 +38,7 @@ const Home = () => {
         <br/>
         <p className='paragraph'>Welcome to my digital space, where I share insights, projects, and experiences from my software development endeavors. Join me on this exciting exploration of technology, creativity, and the endless possibilities that coding offers. Let's embark on a journey of innovation and collaboration in the ever-evolving world of software development.</p>
         <br/>
-        <p className='paragraph'>Let's build something amazing!</p>
+        <p className='paragraph'>amazing!</p>
       </div>
     </div>
   );
