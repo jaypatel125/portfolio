@@ -107,7 +107,7 @@ body {
     background-color: #0100005c;
     width: 0px;
     height: calc(100vh - 60px);
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(30px);
     transition: all 0.6s ease;
     overflow: hidden;
     display: grid;
