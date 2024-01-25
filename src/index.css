@@ -5,6 +5,24 @@
   margin: 0;
   padding: 0;
 }
+/* animation page */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
 
 body {
   /* margin-left: 100;
@@ -14,7 +32,7 @@ body {
   color: #ffffff;
   font-family: 'DM Sans', sans-serif;
 }
-
+/* nav */
 .container {
   max-width: 90%; /* Set max-width to 90% */
   margin: auto;
@@ -71,7 +89,7 @@ body {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #574c4c;
+  background-color: #707070;
 }
 
 
@@ -98,7 +116,6 @@ body {
  
   }
 
-
   .nav-elements.active {
     width: 100%;
     color: #4AF626;
@@ -109,8 +126,6 @@ body {
   }
 
   .nav-elements ul {
-    /* display: flex;
-    flex-direction: column; */
     display: grid;
     justify-content: center;
   }
@@ -132,9 +147,26 @@ body {
     display: grid;
     justify-content: center;
   }
+
+  }
+
+/* normal window nav hover */
+.navlinks a {
+  color: #4AF626;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Add a smooth color transition on hover */
 }
 
-/* css for home */
+.navlinks a:hover {
+  color: #ffffff; /* Change color on hover */
+}
+
+.navlinks .activeLink {
+  color: #ffffff; /* Style for the active link */
+}
+
+/* icon nav */
+
 /* Add this CSS to your stylesheet */
 
 .intro-container {
@@ -147,32 +179,30 @@ body {
   display: grid;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 50px;
   box-sizing: border-box;
   width: 100vw;
   overflow-y: auto;
   align-content: center;
+  font-size: larger;
 }
 
 .page1 {
   margin-top: 50px;
-  height:90vh;
-  font-size: larger;
-   /* Example background color for intro section */
+  height:93vh;
 }
 
 .page2 {
   padding: auto 30%;
   height:100vh;
-  font-size: larger;
 }
 
 .profileimg{
-  width: 20%; /* 50% of the parent container's width */
+  width: 30%; /* 50% of the parent container's width */
   height: auto;
   border-radius: 50%;
   display: block; /* Make the image a block element */
-  margin: 0 auto 25px auto;
+  margin: 0 auto 30px auto;
 }
 
 .paragraph{
@@ -181,14 +211,29 @@ body {
     
 }
 
+.page2home{
+
+}
+
 @media (max-width: 600px) {
   .page2 {
-    padding: 10%;
-    font-size: unset;
+    padding: 5%;
+    font-size: large;
     
   }
   .profileimg{
-    width: 40%; 
+    width: 60%; 
   }
 }
 
+/* contact page hover */
+.page1 a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; 
+  text-decoration: underline;
+}
+
+.page1 a:hover {
+  color: #4AF626; /* Change color on hover */
+}
