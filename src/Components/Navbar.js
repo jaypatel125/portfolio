@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import logo from '../images/logo.png';
 import { NavLink } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faCode, faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faCode, faFileAlt, faContactCard } from '@fortawesome/free-solid-svg-icons';
 import '../index.css';
 
 const Navbar = () => {
@@ -20,7 +19,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="logo"></div>
+        <div className="logo">
+        
+        </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <GiHamburgerMenu className="hamburger" />
         </div>
@@ -52,8 +53,8 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink to="/contact" onClick={closeNavbar}>
-                <FontAwesomeIcon icon={faEnvelope}  style={{ marginRight: '10px' }}/>
-                Contact me
+                <FontAwesomeIcon icon={faContactCard}  style={{ marginRight: '10px' }}/>
+                Contact
               </NavLink>
             </li>
           </ul>

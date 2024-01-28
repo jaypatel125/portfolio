@@ -12,7 +12,7 @@
 
 .fade-enter-active {
   opacity: 1;
-  transition: opacity 300ms ease-in;
+  transition: opacity 350ms ease-in;
 }
 
 .fade-exit {
@@ -21,7 +21,7 @@
 
 .fade-exit-active {
   opacity: 0;
-  transition: opacity 300ms ease-in;
+  transition: opacity 350ms ease-in;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
 }
 /* nav */
 .container {
-  max-width: 90%; /* Set max-width to 90% */
+  max-width: 90%; 
   margin: auto;
   padding: 0 15px;
   display: flex;
@@ -50,9 +50,6 @@ body {
   height: 60px;
   width: 100%;
   background-color: #000000;
-}
-
-.logo {
 }
 
 .menu-icon {
@@ -154,20 +151,19 @@ body {
 .navlinks a {
   color: #4AF626;
   text-decoration: none;
-  transition: color 0.3s ease-in-out; /* Add a smooth color transition on hover */
+  transition: color 0.3s ease-in-out; 
 }
 
 .navlinks a:hover {
-  color: #ffffff; /* Change color on hover */
+  color: #ffffff; 
 }
 
 .navlinks .activeLink {
-  color: #ffffff; /* Style for the active link */
+  color: #ffffff; 
 }
 
-/* icon nav */
 
-/* Add this CSS to your stylesheet */
+/* main home */
 
 .intro-container {
   display: grid;
@@ -182,7 +178,7 @@ body {
   padding: 50px;
   box-sizing: border-box;
   width: 100vw;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   align-content: center;
   font-size: larger;
 }
@@ -193,36 +189,37 @@ body {
 }
 
 .page2 {
-  padding: auto 30%;
+  /* padding: auto 30%; */
   height:100vh;
 }
 
 .profileimg{
-  width: 30%; /* 50% of the parent container's width */
+  width: 25%;
   height: auto;
   border-radius: 50%;
-  display: block; /* Make the image a block element */
+  display: block; 
   margin: 0 auto 30px auto;
 }
 
 .paragraph{
-  padding-left: 10%;
-    padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
     
 }
 
-.page2home{
-
-}
 
 @media (max-width: 600px) {
   .page2 {
-    padding: 5%;
     font-size: large;
     
   }
   .profileimg{
-    width: 60%; 
+    width: 65%; 
+  }
+
+  .paragraph{
+    padding: unset;
+      
   }
 }
 
@@ -232,8 +229,72 @@ body {
   text-decoration: none;
   transition: color 0.3s ease-in-out; 
   text-decoration: underline;
+  
 }
 
 .page1 a:hover {
+
   color: #4AF626; /* Change color on hover */
+}
+
+/* project page */
+
+.project-item img {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project-item {
+  margin-bottom: 30px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .project-item {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+/* about page icons */
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.icon {
+  font-size: 2em;
+  margin: 0 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    margin: 10px 0;
+  }
+}
+
+b {
+  color: red;
 }
