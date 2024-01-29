@@ -101,7 +101,7 @@ body {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #0100005c;
+    background-color:  #010000cd;
     width: 0px;
     height: calc(100vh - 60px);
     backdrop-filter: blur(80px);
