@@ -20,14 +20,13 @@ const Home = () => {
         />
 
         <p>
-          I'm <b>Jay Patel</b><br/> A passionate software development student.
+          I'm Jay Patel<br/> A passionate software development student.
         </p>
       </div>
       <div className='page2' >
           <img className='profileimg' src = {profilephoto} alt='profile'/>
             <p className='paragraph'>A software developer passionate about transforming ideas into impactful digital solutions. Currently immersed in the dynamic field of software development, I thrive on the challenges of crafting elegant code and creating user-friendly applications.</p>
             <br/>
-            <p className='paragraph'>Let's build something amazing!</p>
         </div>
       
     </div>
