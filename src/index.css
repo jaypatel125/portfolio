@@ -50,7 +50,7 @@ body {
   height: 60px;
   width: 100%;
   background-color: #000000;
-  z-index: 1;
+  z-index: 3;
 }
 
 .menu-icon {
@@ -105,7 +105,7 @@ body {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #0100005c;
+    background-color: rgb(1 1 1 / 90%);
     width: 100px;
     height: calc(100vh - 60px);
     backdrop-filter: blur(80px);
