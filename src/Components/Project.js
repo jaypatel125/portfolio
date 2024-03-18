@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import p0photo from "../images/dotnet1.JPEG";
 import p1photo from "../images/jsproject.JPEG";
 import p2photo from "../images/jsproject2.JPEG";
 import p3photo from "../images/jsproject3.JPEG";
@@ -14,14 +15,22 @@ import p9photo from "../images/phpa4.JPEG";
 const projects = [
   {
     id: 1,
-    name: "Fishing Game",
-    githubLink: "https://github.com/jaypatel125/JavaScriptA4",
+    name: "HTML File Checker",
+    githubLink: "",
     description:
-      " Fisherman, a captivating and interactive game crafted using JavaScript, HTML, and CSS, with a touch of SVG to bring the oceanic scene to life. In this engaging experience, players take on the role of a skilled fisherman on a boat in the vast sea, armed with a fish trap, aiming to catch as many fishes as possible to boost their score.",
-    image: p1photo,
+      "This project is a web application that checks the balance of HTML tags in a file. The application is built using .NET. The application is designed to read an HTML file and check the balance of tags, ensuring that each opening tag has a corresponding closing tag. The application provides a user-friendly interface for uploading an HTML file and displays the results of the tag balance check. The project demonstrates my proficiency in .NET development, emphasizing usability, efficiency, and robust error handling. The project is a testament to my growing expertise in .NET development, showcasing my ability to create user-friendly applications.",
+    image: p0photo,
   },
   {
     id: 2,
+    name: "Fishing Game",
+    githubLink: "https://github.com/jaypatel125/JavaScriptA4",
+    description:
+      "Fisherman, a captivating and interactive game crafted using JavaScript, HTML, and CSS, with a touch of SVG to bring the oceanic scene to life. In this engaging experience, players take on the role of a skilled fisherman on a boat in the vast sea, armed with a fish trap, aiming to catch as many fishes as possible to boost their score.",
+    image: p1photo,
+  },
+  {
+    id: 3,
     name: "AJAX-powered Content Display",
     githubLink: "https://github.com/jaypatel125/JavaScriptA5",
     description:
@@ -29,7 +38,7 @@ const projects = [
     image: p2photo,
   },
   {
-    id: 3,
+    id: 4,
     name: "Dynamic Image Gallery",
     githubLink: "https://github.com/jaypatel125/JavaScriptA3",
     description:
@@ -37,7 +46,7 @@ const projects = [
     image: p3photo,
   },
   {
-    id: 4,
+    id: 5,
     name: "Serial Number Patterns and Pyramid Table",
     githubLink: "https://github.com/jaypatel125/phpA1",
     description:
@@ -45,7 +54,7 @@ const projects = [
     image: p4photo,
   },
   {
-    id: 5,
+    id: 6,
     name: "Dynamic Data Sorting ",
     githubLink: "https://github.com/jaypatel125/phpA2",
     description:
@@ -53,7 +62,7 @@ const projects = [
     image: p5photo,
   },
   {
-    id: 6,
+    id: 7,
     name: "CSV File Sorting Application",
     githubLink: "https://github.com/jaypatel125/phpA2",
     description:
@@ -61,7 +70,7 @@ const projects = [
     image: p6photo,
   },
   {
-    id: 7,
+    id: 8,
     name: "Game of NIM",
     githubLink: "https://github.com/jaypatel125/phpA3",
     description:
@@ -69,7 +78,7 @@ const projects = [
     image: p7photo,
   },
   {
-    id: 8,
+    id: 9,
     name: "Game of Hangman",
     githubLink: "https://github.com/jaypatel125/phpA3",
     description:
@@ -77,7 +86,7 @@ const projects = [
     image: p8photo,
   },
   {
-    id: 9,
+    id: 10,
     name: "Infinite Quotes",
     githubLink: "https://github.com/jaypatel125/phpA4",
     description:
@@ -98,7 +107,7 @@ const Project = () => {
             <img
               src={project.image}
               alt={`Project ${project.id}`}
-              style={{ maxWidth: 800 }}
+              style={{ maxWidth: 800, maxHeight: 700 }}
             />
           </div>
           <p style={{ marginBottom: "15px" }}>{project.description}</p>
